@@ -1,9 +1,7 @@
-// For a Redux reducer, you always return the new state of your application.
-
-export default (state) => {
-    return state;
+export default (state, action) => {
+    console.log(action); // log whatever action comes into the reducer
+    return state; // the reducer returns the new state of the app
 }
 
-const setTechnology = (text) =>  {type: "SET_TECHNOLOGY", text}; // action creator
 
 
